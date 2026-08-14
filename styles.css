@@ -18,27 +18,102 @@ body {
   padding: 15px;
 }
 
+/* HEADER */
+
 .header {
     display: grid;
-    grid-column: 2 / 4;
     grid-template-columns: 2fr 1fr;
-    border: 1px solid black;
+    grid-template-rows: auto auto;
+    grid-column: 2 / 4;
+    align-items: center;
 }
 
-.menu ul {
+.search-area {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: auto 1fr;
+    align-items: center;
+    gap: 15px;
 }
 
-.menu {
-    align-self: center;
+#search-bar {
+    width: 90%;
+    height: 40px;
+    border: none;
+    border-radius: 20px;
+    background-color: #e2e8f0;
+    padding: 0 15px;
 }
 
-.menu ul,
-.menu li {
-  font-size: 16px;
-  list-style-type: none;
+.search-icon {
+    height: 35px;
+    width: 35px;
 }
+
+.profile-small {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    align-items: center;
+    justify-content: end;
+    gap: 35px;
+}
+
+.profile-small img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.profile-small p {
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.profile-small .bell-icon {
+    width: 25px;
+    height: 25px;
+}
+
+.profile-large {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    align-items: center;
+    gap: 15px;
+}
+
+.profile-large img {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+}
+
+.profile-large p {
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.profile-large h2 {
+    margin: 3px 0 0;
+}
+
+.menu ul{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.menu button {
+    background-color: rgb(19, 136, 231);
+    color: white;
+
+    border: none;
+    border-radius: 25px;
+
+    padding: 15px 20px;
+    font-weight: bold;
+}
+
+
+/* SIDEBAR */
 
 .sidebar {
     background-color: rgb(19, 136, 231);
@@ -64,6 +139,8 @@ body {
     font-size: 20px;
     font-weight: bold;
 }
+
+/* PROJECT */
 
 .project {
     display: grid;
@@ -98,6 +175,8 @@ body {
     font-weight: bold;
 }
 
+/* RIGHT PANEL */
+
 .right-panel {
     display: grid;
     gap: 30px;
@@ -114,3 +193,4 @@ body {
 .trending-box {
     background-color: white;
 }
+
